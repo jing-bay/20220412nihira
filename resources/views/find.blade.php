@@ -24,11 +24,13 @@
   <tr>
     <th>Data</th>
   </tr>
+  @foreach($item as $author)
   <tr>
     <td>
-      {{$item->getDetail()}}
+      {{$author->getDetail()}}
     </td>
   </tr>
+  @endforeach
 </table>
 @endif
 @endsection
